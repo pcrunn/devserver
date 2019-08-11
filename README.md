@@ -8,3 +8,6 @@
   - No Rain :cloud_with_rain:
   - Peaceful Difficulty :rainbow:
   - Always Day :sunny:
+
+# Commands
+- toggleHotReloads / thr - Toggles hot reloads
