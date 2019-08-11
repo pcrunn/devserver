@@ -1,0 +1,7 @@
+name: DevServer
+version: 1.0-DEV
+author: 'Alexander P <pcrunn@pm.me>'
+main: me.pcrunn.devserver.DevServerPlugin
+commands:
+  toggleHotReloads:
+    aliases: [thr]
