@@ -8,6 +8,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import java.io.File;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.stream.IntStream;
 
 public class UpdatePluginsTask extends BukkitRunnable implements Runnable {
 
@@ -38,7 +39,7 @@ public class UpdatePluginsTask extends BukkitRunnable implements Runnable {
                         // we have to reload the server because we can't find the plugin by it's file
                         plugin.reloadServer();
                     } catch (Exception e) {
-                        for (int i = 0; i < 5; i++) System.out.println("wtf");
+                        IntStream.range(0, 5).forEach(i -> System.out.println("wtf"));
                         e.printStackTrace();
                     }
                 }
